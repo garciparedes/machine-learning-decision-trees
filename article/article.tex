@@ -1,7 +1,7 @@
 \documentclass[10pt, a4paper,spanish]{article}
 
-\usepackage{./mystyle}
-\usepackage{./myvars}
+\usepackage{mystyle}
+\usepackage{myvars}
 
 
 
@@ -19,7 +19,7 @@
 %-----------------------------
 
 	\begin{abstract}
-		\noindent Abstract.
+		\noindent En este documento se analiza el comportamiento de los algoritmos de generación de árboles de decisión \emph{ID3} y \emph{J48} desde el punto de vista de la discretización de atributos (en el caso de \emph{ID3} de forma manual). Para ello se ha utilizado el conjunto de datos \emph{Thoracic Surgery Data Data Set}\cite{dataset:thoracic}. La herramienta utilizada para el aprendizaje automático ha sido \emph{WEKA}\cite{tool:weka}.
 	\end{abstract}
 
 %-----------------------------
@@ -30,12 +30,31 @@
 	\section{¿Por qué no se puede aplicar directamente ID3?}
 
 		\paragraph{}
+		El conjunto de datos utilizado\cite{dataset:thoracic} está formado por \textbf{470} instancias, las cuales describen resultados acerca de la esperanza de vida tras operaciones de cáncer pulmonar. El conjunto de datos presenta atributos con las siguientes características:
+		\begin{itemize}
+			\setlength\itemsep{0em}
+			\item 10 atributos de tipo categórico binario.
+			\item 1 atributo de tipo categórico con 3 valores distintos.
+			\item 1 atributo de tipo categórico con 4 valores distintos.
+			\item 1 atributo de tipo categórico con 7 valores distintos.
+			\item 1 atributo de tipo numérico real en el rango $[1.44, 6.3]$.
+			\item 1 atributo de tipo numérico real en el rango $[0.96, 86.3]$.
+			\item 1 atributo de tipo numérico entero en el rango $[21, 87]$.
+			\item 1 atributo de tipo categórico binario, que representa el valor de la clase.
+		\end{itemize}
 
+		\paragraph{}
+		La razón por la cual no se puede aplicar el algoritmo \emph{ID3} sobre este conjunto de datos es la existencia de atributos de naturaleza numérica, para los cuales dicho algoritmo no está diseñado.
 
 	\section{Realice las modificaciones previas en el fichero de datos para que pueda llevar a cabo lo anterior y proporcione los resultados aplicando el método de retención o Hold-Out para la formación del experimento}
 
 		\paragraph{}
+		Para poder aplicar el algoritmo \emph{ID3} existen distintas alternativas, como la discretización de los atributos numéricos o la eliminación de los mismos. Nótese que la eliminación no es una buena alternativa debido a que de esta manera se deja de utilizar información valiosa para la tarea de clasificación, por tanto, en este caso se ha decidido realizar una discretización.
 
+		\paragraph{}
+		El método que se ha utilizado para dicha tarea ha sido el más básico posible, realizando una partición de 10 intervalos sobre el rango de valores que toma cada uno de los atributos numéricos.
+
+		\paragraph{}
 
 	\section{Volviendo al fichero original, pase el algoritmo J48 también aplicando el método de retención o Hold-Out. Analice el árbol obtenido sin poda. ¿Se podría prescindir de algún atributo? Si es así, hágalo y compare los resultados de nuevo}
 
