@@ -71,7 +71,7 @@
 			\begin{center}
 				\begin{tabular}{r c c|c|l}
 					& & \multicolumn{2}{ c }{Valor Real} \\ \cline{3-4}
-					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_j$}\\ \cline{2-4}
+					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_i$}\\ \cline{2-4}
 					\multicolumn{1}{  c  }{\multirow{2}{*}{Valor Predicho} } 	& \multicolumn{1}{ |c| }{Positivo} & $5$ & $18$ &  $0.2173$   \\ \cline{2-4}
 					\multicolumn{1}{  c  }{}                        					& \multicolumn{1}{ |c| }{Negativo} & $21$  & $111$ & $0.8409$ \\ \cline{2-4}
 					& \multicolumn{1}{ c }{$\pi_j$} & \multicolumn{1}{ c }{$0.1677$} & \multicolumn{1}{ c }{$0.8322$} & \multicolumn{1}{ l }{$N = 155$}
@@ -103,7 +103,7 @@
 			\begin{center}
 				\begin{tabular}{r c c|c|l}
 					& & \multicolumn{2}{ c }{Valor Real} \\ \cline{3-4}
-					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_j$}\\ \cline{2-4}
+					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_i$}\\ \cline{2-4}
 					\multicolumn{1}{  c  }{\multirow{2}{*}{Valor Predicho} } 	& \multicolumn{1}{ |c| }{Positivo} & $4$ & $18$ &  $0.1375$   \\ \cline{2-4}
 					\multicolumn{1}{  c  }{}                        					& \multicolumn{1}{ |c| }{Negativo} & $22$  & $116$ & $0.8625$ \\ \cline{2-4}
 					& \multicolumn{1}{ c }{$\pi_j$} & \multicolumn{1}{ c }{$0.1625$} & \multicolumn{1}{ c }{$0.8375$} & \multicolumn{1}{ l }{$N = 160$}
@@ -138,7 +138,7 @@
 			\begin{center}
 				\begin{tabular}{r c c|c|l}
 					& & \multicolumn{2}{ c }{Valor Real} \\ \cline{3-4}
-					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_j$}\\ \cline{2-4}
+					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_i$}\\ \cline{2-4}
 					\multicolumn{1}{  c  }{\multirow{2}{*}{Valor Predicho} } 	& \multicolumn{1}{ |c| }{Positivo} & $4$ & $18$ &  $0.1375$   \\ \cline{2-4}
 					\multicolumn{1}{  c  }{}                        					& \multicolumn{1}{ |c| }{Negativo} & $22$  & $116$ & $0.8625$ \\ \cline{2-4}
 					& \multicolumn{1}{ c }{$\pi_j$} & \multicolumn{1}{ c }{$0.1625$} & \multicolumn{1}{ c }{$0.8375$} & \multicolumn{1}{ l }{$N = 160$}
@@ -155,19 +155,20 @@
 		La técnica seguida por el algoritmo \emph{J48} ofrece mejores resultados que la aplicada en el apartado \ref{sec:2} con el algoritmo \emph{ID3} debido a que en dicho caso la discretización se realiza \emph{A priori}. Esto quiere decir que además de no poder apoyarse en los valores de la clase de destino para la clasificación, este atributo tan solo podrá ser utilizado una vez para la clasificación.
 
 		\paragraph{}
- 		Por contra, el algoritmo \emph{J48} realiza una técnica que aplica particionamiento binario y recursivo utilizando la \emph{Ganancia de Información} como medida de bondad. La técnica de particionamiento recursivo de atributos numéricos permite una mejor clasificación ya que tan solo se produce cuando se maximiza la ganancia de información para dicha partición binaria.
+ 		Por contra, el algoritmo \emph{J48} realiza una técnica que aplica particionamiento binario y recursivo utilizando la \emph{Ganancia de Información} como medida de bondad. La técnica de particionamiento recursivo de atributos numéricos permite una clasificación más eficiente ya que tan solo se produce cuando se maximiza la ganancia de información para dicha partición binaria.
 
 	\section{Plantee, entonces, una discretización basada en el punto anterior, aunque no resulte ser binaria, sino en tantos tramos como induzcan los valores usados al formar las ramas del árbol con J48 sin poda (Hold-Out). Introduzca este fichero de nuevo al algoritmo ID3. Compare los resultados con el J48 de \ref{sec:3}}
 	\label{sec:5}
 
 		\paragraph{}
+		Para realizar la discretización propuesta, se ha realizado un script básico en python, el cual se puede visualizar a partir de \url{https://github.com/garciparedes/python-examples/blob/master/data_sets/main/DiscretizeThoraricSurgery.py}\cite{github:garciparedes-python-examples}. Tal y como se produce en el caso del árbol de decisión generado por \emph{J48} en el apartado \ref{sec:2}, se ha dividido el atributo \textbf{PRE4} en 3 particiones, el atributo \textbf{PRE5} en 2 particiones y el atributo \textbf{AGE} en 4 fijando los límites de cada uno de ellos según los mismos puntos que hizo \emph{J48}. El árbol resultante generado por \emph{ID3} se muestra en la figura \ref{fig:id3-tree-2}. Nótese que el tamaño de este es mucho mayor que su homónimo generado por \emph{J48}.
 
 		\begin{figure}[h]
 			\begin{center}
 				\includegraphics[width=\textwidth]{id3-tree-2}
 			\end{center}
 			\caption{Árbol de decisión generado a partir del algoritmo \emph{ID3} discretizado según las particiones del apartado \ref{sec:3}}
-			\label{fig:id3-tree}
+			\label{fig:id3-tree-2}
 		\end{figure}
 
 		\paragraph{}
@@ -177,7 +178,7 @@
 			\begin{center}
 				\begin{tabular}{r c c|c|l}
 					& & \multicolumn{2}{ c }{Valor Real} \\ \cline{3-4}
-					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_j$}\\ \cline{2-4}
+					& & \multicolumn{1}{ |c| }{Positivo} & \multicolumn{1}{ |c| }{Negativo} & \multicolumn{1}{ l }{$p_i$}\\ \cline{2-4}
 					\multicolumn{1}{  c  }{\multirow{2}{*}{Valor Predicho} } 	& \multicolumn{1}{ |c| }{Positivo} & $4$ & $13$ &  $0.1075$   \\ \cline{2-4}
 					\multicolumn{1}{  c  }{}                        					& \multicolumn{1}{ |c| }{Negativo} & $21$  & $120$ & $0.8924$ \\ \cline{2-4}
 					& \multicolumn{1}{ c }{$\pi_j$} & \multicolumn{1}{ c }{$0.1582$} & \multicolumn{1}{ c }{$0.8417$} & \multicolumn{1}{ l }{$N = 158$}
@@ -187,7 +188,13 @@
 			\label{table:confusion-matrix-id3-2}
 		\end{table}
 
+		\paragraph{}
+		El árbol obtenido en este apartado ha presentado mejores resultados durante la fase de test. Los motivos por los que ha ocurrido dicho fenómeno pueden haber sido debidos a lo siguiente:
 
+		\begin{itemize}
+			\item Los intervalos de particionamiento de los atributos de naturaleza numérica para su discretización han sido seleccionados de forma óptima según los resulados anteriores del algoritmo \emph{J48}, que trata de maximizar la Ganancia de Información al realizar dicha tarea.
+			\item El árbol captura todas las posibles combinaciones en cada caso dado que la discretización se ha realizado \emph{A priori}. Esto dependiendo del conjunto de datos, puede ser ser una ventaja o una desventaja debido a que en un gran número de ocasiones el sobreajuste que produce \emph{ID3} es perjudicial para la tarea de clasificación, aunque en este caso no ha sido así.
+		\end{itemize}
 
 %-----------------------------
 %	Bibliographic references
