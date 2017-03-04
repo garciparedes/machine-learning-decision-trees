@@ -1,0 +1,333 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3
+Relation:     Thoracic_Surgery_Data-weka.filters.unsupervised.attribute.Discretize-O-B10-M-1.0-Rfirst-last
+Instances:    470
+Attributes:   17
+              DGN
+              PRE4
+              PRE5
+              PRE6
+              PRE7
+              PRE8
+              PRE9
+              PRE10
+              PRE11
+              PRE14
+              PRE17
+              PRE19
+              PRE25
+              PRE30
+              PRE32
+              AGE
+              Risk1Yr
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Id3
+
+
+DGN = DGN3
+|  PRE4 = '(-inf-1.926]': F
+|  PRE4 = '(1.926-2.412]'
+|  |  PRE17 = T
+|  |  |  PRE14 = OC11
+|  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  PRE6 = PRZ1: T
+|  |  |  |  PRE6 = PRZ0: F
+|  |  |  PRE14 = OC14: F
+|  |  |  PRE14 = OC12: T
+|  |  |  PRE14 = OC13: null
+|  |  PRE17 = F
+|  |  |  PRE14 = OC11: F
+|  |  |  PRE14 = OC14: T
+|  |  |  PRE14 = OC12
+|  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  PRE6 = PRZ0
+|  |  |  |  |  PRE30 = T: F
+|  |  |  |  |  PRE30 = F: F
+|  |  |  PRE14 = OC13: F
+|  PRE4 = '(2.412-2.898]'
+|  |  PRE14 = OC11
+|  |  |  PRE6 = PRZ2: T
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE11 = T: F
+|  |  |  |  PRE11 = F
+|  |  |  |  |  PRE30 = T
+|  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  PRE9 = F: F
+|  |  |  |  |  PRE30 = F: F
+|  |  |  PRE6 = PRZ0
+|  |  |  |  PRE30 = T
+|  |  |  |  |  PRE5 = '(-inf-9.494]': F
+|  |  |  |  |  PRE5 = '(9.494-inf)': F
+|  |  |  |  PRE30 = F: F
+|  |  PRE14 = OC14: T
+|  |  PRE14 = OC12
+|  |  |  PRE6 = PRZ2: T
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE8 = T
+|  |  |  |  |  PRE5 = '(-inf-9.494]': T
+|  |  |  |  |  PRE5 = '(9.494-inf)': F
+|  |  |  |  PRE8 = F
+|  |  |  |  |  PRE7 = T: T
+|  |  |  |  |  PRE7 = F
+|  |  |  |  |  |  PRE30 = T
+|  |  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  |  PRE9 = F
+|  |  |  |  |  |  |  |  PRE19 = T: F
+|  |  |  |  |  |  |  |  PRE19 = F
+|  |  |  |  |  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  |  |  |  PRE17 = T: F
+|  |  |  |  |  |  |  |  |  |  PRE17 = F: F
+|  |  |  |  |  |  PRE30 = F: F
+|  |  |  PRE6 = PRZ0: F
+|  |  PRE14 = OC13
+|  |  |  PRE7 = T: F
+|  |  |  PRE7 = F: T
+|  PRE4 = '(2.898-3.384]'
+|  |  PRE7 = T
+|  |  |  PRE10 = T
+|  |  |  |  PRE8 = T: F
+|  |  |  |  PRE8 = F
+|  |  |  |  |  PRE30 = T: T
+|  |  |  |  |  PRE30 = F: F
+|  |  |  PRE10 = F: T
+|  |  PRE7 = F
+|  |  |  PRE6 = PRZ2
+|  |  |  |  PRE14 = OC11: T
+|  |  |  |  PRE14 = OC14: F
+|  |  |  |  PRE14 = OC12: F
+|  |  |  |  PRE14 = OC13: F
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE17 = T
+|  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  PRE11 = F: F
+|  |  |  |  PRE17 = F
+|  |  |  |  |  PRE14 = OC11: F
+|  |  |  |  |  PRE14 = OC14: F
+|  |  |  |  |  PRE14 = OC12
+|  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  PRE30 = T
+|  |  |  |  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  |  |  |  PRE9 = F: F
+|  |  |  |  |  |  |  |  PRE30 = F: F
+|  |  |  |  |  PRE14 = OC13: F
+|  |  |  PRE6 = PRZ0: F
+|  PRE4 = '(3.384-3.87]'
+|  |  PRE14 = OC11
+|  |  |  PRE11 = T
+|  |  |  |  PRE7 = T: T
+|  |  |  |  PRE7 = F
+|  |  |  |  |  PRE17 = T: F
+|  |  |  |  |  PRE17 = F: T
+|  |  |  PRE11 = F: F
+|  |  PRE14 = OC14
+|  |  |  PRE17 = T: F
+|  |  |  PRE17 = F: T
+|  |  PRE14 = OC12
+|  |  |  PRE10 = T
+|  |  |  |  PRE9 = T: T
+|  |  |  |  PRE9 = F
+|  |  |  |  |  PRE7 = T: F
+|  |  |  |  |  PRE7 = F
+|  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  PRE17 = T: F
+|  |  |  |  |  |  |  |  PRE17 = F
+|  |  |  |  |  |  |  |  |  PRE30 = T: F
+|  |  |  |  |  |  |  |  |  PRE30 = F: F
+|  |  |  PRE10 = F: F
+|  |  PRE14 = OC13: T
+|  PRE4 = '(3.87-inf)'
+|  |  PRE9 = T
+|  |  |  PRE7 = T: T
+|  |  |  PRE7 = F
+|  |  |  |  PRE8 = T: T
+|  |  |  |  PRE8 = F
+|  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  PRE11 = F: F
+|  |  PRE9 = F
+|  |  |  PRE17 = T: T
+|  |  |  PRE17 = F
+|  |  |  |  PRE14 = OC11
+|  |  |  |  |  PRE8 = T
+|  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  PRE6 = PRZ1
+|  |  |  |  |  |  |  PRE7 = T: F
+|  |  |  |  |  |  |  PRE7 = F: T
+|  |  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  PRE6 = PRZ0
+|  |  |  |  |  |  |  PRE10 = T: F
+|  |  |  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE14 = OC14: F
+|  |  |  |  PRE14 = OC12
+|  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  PRE6 = PRZ1
+|  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  PRE10 = T
+|  |  |  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  |  |  PRE25 = T: F
+|  |  |  |  |  |  |  |  |  PRE25 = F
+|  |  |  |  |  |  |  |  |  |  PRE30 = T
+|  |  |  |  |  |  |  |  |  |  |  AGE = '(-inf-27.6]': null
+|  |  |  |  |  |  |  |  |  |  |  AGE = '(27.6-34.2]': null
+|  |  |  |  |  |  |  |  |  |  |  AGE = '(34.2-40.8]': F
+|  |  |  |  |  |  |  |  |  |  |  AGE = '(40.8-inf)': F
+|  |  |  |  |  |  |  |  |  |  PRE30 = F: F
+|  |  |  |  |  |  |  PRE10 = F: F
+|  |  |  |  |  PRE6 = PRZ0: F
+|  |  |  |  PRE14 = OC13
+|  |  |  |  |  PRE6 = PRZ2: T
+|  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  PRE6 = PRZ0: null
+DGN = DGN2
+|  PRE4 = '(-inf-1.926]': F
+|  PRE4 = '(1.926-2.412]': F
+|  PRE4 = '(2.412-2.898]'
+|  |  PRE5 = '(-inf-9.494]'
+|  |  |  PRE6 = PRZ2: F
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE14 = OC11: F
+|  |  |  |  PRE14 = OC14: F
+|  |  |  |  PRE14 = OC12
+|  |  |  |  |  PRE8 = T
+|  |  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  |  PRE11 = F: F
+|  |  |  |  |  PRE8 = F: T
+|  |  |  |  PRE14 = OC13: F
+|  |  |  PRE6 = PRZ0: F
+|  |  PRE5 = '(9.494-inf)': T
+|  PRE4 = '(2.898-3.384]'
+|  |  PRE8 = T: F
+|  |  PRE8 = F
+|  |  |  PRE25 = T: T
+|  |  |  PRE25 = F
+|  |  |  |  PRE14 = OC11: F
+|  |  |  |  PRE14 = OC14: F
+|  |  |  |  PRE14 = OC12
+|  |  |  |  |  PRE10 = T
+|  |  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  |  PRE6 = PRZ1: T
+|  |  |  |  |  |  PRE6 = PRZ0: T
+|  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE14 = OC13: null
+|  PRE4 = '(3.384-3.87]'
+|  |  PRE17 = T: T
+|  |  PRE17 = F: F
+|  PRE4 = '(3.87-inf)'
+|  |  PRE14 = OC11
+|  |  |  PRE10 = T: F
+|  |  |  PRE10 = F: T
+|  |  PRE14 = OC14: T
+|  |  PRE14 = OC12
+|  |  |  PRE6 = PRZ2: null
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE9 = T: F
+|  |  |  |  PRE9 = F
+|  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  PRE11 = F: T
+|  |  |  PRE6 = PRZ0: F
+|  |  PRE14 = OC13: F
+DGN = DGN4
+|  PRE4 = '(-inf-1.926]': F
+|  PRE4 = '(1.926-2.412]'
+|  |  PRE30 = T
+|  |  |  PRE6 = PRZ2: null
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE8 = T: T
+|  |  |  |  PRE8 = F: F
+|  |  |  PRE6 = PRZ0: T
+|  |  PRE30 = F: F
+|  PRE4 = '(2.412-2.898]'
+|  |  PRE6 = PRZ2: T
+|  |  PRE6 = PRZ1
+|  |  |  PRE7 = T: F
+|  |  |  PRE7 = F
+|  |  |  |  PRE17 = T: T
+|  |  |  |  PRE17 = F
+|  |  |  |  |  PRE14 = OC11: F
+|  |  |  |  |  PRE14 = OC14: null
+|  |  |  |  |  PRE14 = OC12
+|  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  PRE11 = F: T
+|  |  |  |  |  PRE14 = OC13: null
+|  |  PRE6 = PRZ0: F
+|  PRE4 = '(2.898-3.384]'
+|  |  PRE9 = T: T
+|  |  PRE9 = F: F
+|  PRE4 = '(3.384-3.87]'
+|  |  PRE11 = T: T
+|  |  PRE11 = F: F
+|  PRE4 = '(3.87-inf)': F
+DGN = DGN6: F
+DGN = DGN5
+|  PRE4 = '(-inf-1.926]': null
+|  PRE4 = '(1.926-2.412]': T
+|  PRE4 = '(2.412-2.898]'
+|  |  PRE6 = PRZ2: F
+|  |  PRE6 = PRZ1
+|  |  |  PRE14 = OC11: null
+|  |  |  PRE14 = OC14: null
+|  |  |  PRE14 = OC12: F
+|  |  |  PRE14 = OC13: T
+|  |  PRE6 = PRZ0: T
+|  PRE4 = '(2.898-3.384]': F
+|  PRE4 = '(3.384-3.87]'
+|  |  PRE5 = '(-inf-9.494]': T
+|  |  PRE5 = '(9.494-inf)': F
+|  PRE4 = '(3.87-inf)'
+|  |  PRE5 = '(-inf-9.494]'
+|  |  |  PRE10 = T: T
+|  |  |  PRE10 = F: F
+|  |  PRE5 = '(9.494-inf)': F
+DGN = DGN8
+|  PRE14 = OC11: T
+|  PRE14 = OC14: null
+|  PRE14 = OC12: F
+|  PRE14 = OC13: null
+DGN = DGN1: F
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         120               75      %
+Incorrectly Classified Instances        33               20.625  %
+Kappa statistic                          0.0727
+Mean absolute error                      0.2343
+Root mean squared error                  0.4613
+Relative absolute error                 97.5573 %
+Root relative squared error            131.9831 %
+UnClassified Instances                   7                4.375  %
+Total Number of Instances              160
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.174    0.108    0.222      0.174    0.195      0.073    0.544     0.180     T
+                 0.892    0.826    0.859      0.892    0.875      0.073    0.592     0.866     F
+Weighted Avg.    0.784    0.718    0.763      0.784    0.773      0.073    0.585     0.763
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   4  19 |   a = T
+  14 116 |   b = F

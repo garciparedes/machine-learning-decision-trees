@@ -1,0 +1,152 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -U -M 2
+Relation:     Thoracic_Surgery_Data-weka.filters.unsupervised.attribute.Remove-R12,15
+Instances:    470
+Attributes:   15
+              DGN
+              PRE4
+              PRE5
+              PRE6
+              PRE7
+              PRE8
+              PRE9
+              PRE10
+              PRE11
+              PRE14
+              PRE17
+              PRE25
+              PRE30
+              AGE
+              Risk1Yr
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+DGN = DGN3
+|   PRE7 = T
+|   |   PRE11 = T: T (2.0)
+|   |   PRE11 = F
+|   |   |   PRE14 = OC11: F (6.0)
+|   |   |   PRE14 = OC14: T (1.0)
+|   |   |   PRE14 = OC12
+|   |   |   |   PRE10 = T
+|   |   |   |   |   PRE8 = T: F (4.0)
+|   |   |   |   |   PRE8 = F
+|   |   |   |   |   |   AGE <= 59: T (3.0/1.0)
+|   |   |   |   |   |   AGE > 59: F (2.0)
+|   |   |   |   PRE10 = F: T (2.0)
+|   |   |   PRE14 = OC13: F (3.0)
+|   PRE7 = F
+|   |   PRE9 = T
+|   |   |   PRE11 = T: T (2.0)
+|   |   |   PRE11 = F
+|   |   |   |   PRE8 = T
+|   |   |   |   |   PRE10 = T: T (3.0/1.0)
+|   |   |   |   |   PRE10 = F: F (2.0)
+|   |   |   |   PRE8 = F: F (12.0/1.0)
+|   |   PRE9 = F
+|   |   |   PRE30 = T
+|   |   |   |   PRE17 = T
+|   |   |   |   |   PRE5 <= 1.44: T (2.0)
+|   |   |   |   |   PRE5 > 1.44: F (16.0/3.0)
+|   |   |   |   PRE17 = F
+|   |   |   |   |   PRE14 = OC11: F (102.0/7.0)
+|   |   |   |   |   PRE14 = OC14
+|   |   |   |   |   |   AGE <= 50: T (3.0/1.0)
+|   |   |   |   |   |   AGE > 50: F (3.0)
+|   |   |   |   |   PRE14 = OC12
+|   |   |   |   |   |   PRE10 = T
+|   |   |   |   |   |   |   PRE6 = PRZ2: F (4.0)
+|   |   |   |   |   |   |   PRE6 = PRZ1
+|   |   |   |   |   |   |   |   PRE25 = T: F (2.0)
+|   |   |   |   |   |   |   |   PRE25 = F
+|   |   |   |   |   |   |   |   |   PRE11 = T: F (16.0/1.0)
+|   |   |   |   |   |   |   |   |   PRE11 = F
+|   |   |   |   |   |   |   |   |   |   PRE8 = T
+|   |   |   |   |   |   |   |   |   |   |   PRE4 <= 2.88: T (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   PRE4 > 2.88: F (4.0)
+|   |   |   |   |   |   |   |   |   |   PRE8 = F: F (67.0/10.0)
+|   |   |   |   |   |   |   PRE6 = PRZ0: F (2.0)
+|   |   |   |   |   |   PRE10 = F: F (30.0/1.0)
+|   |   |   |   |   PRE14 = OC13
+|   |   |   |   |   |   AGE <= 58: T (2.0)
+|   |   |   |   |   |   AGE > 58: F (3.0)
+|   |   |   PRE30 = F
+|   |   |   |   PRE14 = OC11: F (22.0)
+|   |   |   |   PRE14 = OC14: T (1.0)
+|   |   |   |   PRE14 = OC12: F (24.0)
+|   |   |   |   PRE14 = OC13: F (1.0)
+DGN = DGN2
+|   PRE7 = T: F (2.0)
+|   PRE7 = F
+|   |   PRE25 = T: T (2.0/1.0)
+|   |   PRE25 = F
+|   |   |   PRE14 = OC11: F (11.0/1.0)
+|   |   |   PRE14 = OC14
+|   |   |   |   PRE5 <= 2.84: F (4.0)
+|   |   |   |   PRE5 > 2.84: T (3.0)
+|   |   |   PRE14 = OC12
+|   |   |   |   PRE10 = T
+|   |   |   |   |   PRE30 = T
+|   |   |   |   |   |   PRE8 = T: F (7.0/1.0)
+|   |   |   |   |   |   PRE8 = F: T (7.0/2.0)
+|   |   |   |   |   PRE30 = F: F (3.0)
+|   |   |   |   PRE10 = F: F (9.0)
+|   |   |   PRE14 = OC13: F (4.0/1.0)
+DGN = DGN4
+|   PRE5 <= 2.2
+|   |   PRE30 = T
+|   |   |   PRE6 = PRZ2: T (2.0)
+|   |   |   PRE6 = PRZ1
+|   |   |   |   AGE <= 61: T (2.0)
+|   |   |   |   AGE > 61: F (9.0/2.0)
+|   |   |   PRE6 = PRZ0: T (1.0)
+|   |   PRE30 = F: F (4.0)
+|   PRE5 > 2.2: F (29.0)
+DGN = DGN6: F (4.0)
+DGN = DGN5
+|   PRE7 = T: F (3.0)
+|   PRE7 = F
+|   |   PRE11 = T: F (4.0/1.0)
+|   |   PRE11 = F: T (8.0/2.0)
+DGN = DGN8: T (2.0/1.0)
+DGN = DGN1: F (1.0)
+
+Number of Leaves  : 	53
+
+Size of the tree : 	90
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         120               75      %
+Incorrectly Classified Instances        40               25      %
+Kappa statistic                          0.0208
+Mean absolute error                      0.2586
+Root mean squared error                  0.4423
+Relative absolute error                 99.5075 %
+Root relative squared error            119.7396 %
+Total Number of Instances              160
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.154    0.134    0.182      0.154    0.167      0.021    0.593     0.197     T
+                 0.866    0.846    0.841      0.866    0.853      0.021    0.593     0.870     F
+Weighted Avg.    0.750    0.730    0.734      0.750    0.741      0.021    0.593     0.760
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   4  22 |   a = T
+  18 116 |   b = F

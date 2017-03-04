@@ -1,0 +1,363 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.Id3
+Relation:     Thoracic_Surgery_Data-weka.filters.unsupervised.attribute.Discretize-Y-B4-M-1.0-Rfirst-last
+Instances:    470
+Attributes:   17
+              DGN
+              PRE4
+              PRE5
+              PRE6
+              PRE7
+              PRE8
+              PRE9
+              PRE10
+              PRE11
+              PRE14
+              PRE17
+              PRE19
+              PRE25
+              PRE30
+              PRE32
+              AGE
+              Risk1Yr
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Id3
+
+
+DGN = DGN3
+|  PRE14 = OC11
+|  |  PRE11 = T
+|  |  |  PRE7 = T: T
+|  |  |  PRE7 = F
+|  |  |  |  PRE9 = T: T
+|  |  |  |  PRE9 = F
+|  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  AGE = 'B2of4': F
+|  |  |  |  |  AGE = 'B3of4'
+|  |  |  |  |  |  PRE4 = 'B1of4': F
+|  |  |  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  |  |  PRE4 = 'B3of4': null
+|  |  |  |  |  |  PRE4 = 'B4of4': null
+|  |  |  |  |  AGE = 'B4of4'
+|  |  |  |  |  |  PRE4 = 'B1of4'
+|  |  |  |  |  |  |  PRE8 = T: T
+|  |  |  |  |  |  |  PRE8 = F: F
+|  |  |  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  |  |  PRE6 = PRZ2: T
+|  |  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  |  |  PRE4 = 'B3of4': F
+|  |  |  |  |  |  PRE4 = 'B4of4': null
+|  |  PRE11 = F
+|  |  |  AGE = 'B1of4': F
+|  |  |  AGE = 'B2of4': F
+|  |  |  AGE = 'B3of4'
+|  |  |  |  PRE4 = 'B1of4'
+|  |  |  |  |  PRE10 = T
+|  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  PRE30 = T: F
+|  |  |  |  |  |  |  PRE30 = F: F
+|  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  PRE10 = T: F
+|  |  |  |  |  PRE10 = F
+|  |  |  |  |  |  PRE30 = T
+|  |  |  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  |  PRE6 = PRZ0
+|  |  |  |  |  |  |  |  PRE25 = T: F
+|  |  |  |  |  |  |  |  PRE25 = F: F
+|  |  |  |  |  |  PRE30 = F: F
+|  |  |  |  PRE4 = 'B3of4'
+|  |  |  |  |  PRE8 = T
+|  |  |  |  |  |  PRE7 = T: F
+|  |  |  |  |  |  PRE7 = F: T
+|  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  PRE10 = T: F
+|  |  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE4 = 'B4of4': null
+|  |  |  AGE = 'B4of4': F
+|  PRE14 = OC14
+|  |  PRE10 = T
+|  |  |  AGE = 'B1of4': null
+|  |  |  AGE = 'B2of4'
+|  |  |  |  PRE4 = 'B1of4': T
+|  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  PRE6 = PRZ1: T
+|  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  PRE4 = 'B3of4': null
+|  |  |  |  PRE4 = 'B4of4': F
+|  |  |  AGE = 'B3of4': F
+|  |  |  AGE = 'B4of4': F
+|  |  PRE10 = F: T
+|  PRE14 = OC12
+|  |  PRE7 = T
+|  |  |  PRE10 = T
+|  |  |  |  PRE4 = 'B1of4': F
+|  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  PRE5 = 'B1of4'
+|  |  |  |  |  |  |  PRE30 = T: T
+|  |  |  |  |  |  |  PRE30 = F: F
+|  |  |  |  |  |  PRE5 = 'B2of4': null
+|  |  |  |  |  |  PRE5 = 'B3of4': null
+|  |  |  |  |  |  PRE5 = 'B4of4': F
+|  |  |  |  PRE4 = 'B3of4': T
+|  |  |  |  PRE4 = 'B4of4': null
+|  |  |  PRE10 = F: T
+|  |  PRE7 = F
+|  |  |  PRE30 = T
+|  |  |  |  PRE4 = 'B1of4'
+|  |  |  |  |  PRE17 = T
+|  |  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  |  AGE = 'B2of4': null
+|  |  |  |  |  |  AGE = 'B3of4': T
+|  |  |  |  |  |  AGE = 'B4of4': F
+|  |  |  |  |  PRE17 = F
+|  |  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  |  AGE = 'B2of4': F
+|  |  |  |  |  |  AGE = 'B3of4'
+|  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  |  |  PRE9 = F
+|  |  |  |  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  |  |  |  PRE32 = T: F
+|  |  |  |  |  |  |  |  |  |  PRE32 = F
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ0: F
+|  |  |  |  |  |  AGE = 'B4of4'
+|  |  |  |  |  |  |  PRE10 = T
+|  |  |  |  |  |  |  |  PRE8 = T: T
+|  |  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  |  PRE11 = T
+|  |  |  |  |  |  |  |  |  |  PRE9 = T: T
+|  |  |  |  |  |  |  |  |  |  PRE9 = F
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  |  |  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  |  |  |  |  PRE9 = F: F
+|  |  |  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE4 = 'B2of4'
+|  |  |  |  |  PRE10 = T
+|  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  PRE6 = PRZ1
+|  |  |  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  |  |  AGE = 'B2of4'
+|  |  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  |  PRE17 = T: F
+|  |  |  |  |  |  |  |  |  PRE17 = F: F
+|  |  |  |  |  |  |  AGE = 'B3of4'
+|  |  |  |  |  |  |  |  PRE9 = T: F
+|  |  |  |  |  |  |  |  PRE9 = F
+|  |  |  |  |  |  |  |  |  PRE19 = T: F
+|  |  |  |  |  |  |  |  |  PRE19 = F
+|  |  |  |  |  |  |  |  |  |  PRE25 = T: F
+|  |  |  |  |  |  |  |  |  |  PRE25 = F
+|  |  |  |  |  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  |  |  |  |  PRE17 = T
+|  |  |  |  |  |  |  |  |  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  |  |  |  |  |  |  |  |  PRE11 = F: F
+|  |  |  |  |  |  |  |  |  |  |  |  PRE17 = F
+|  |  |  |  |  |  |  |  |  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  |  |  |  |  |  |  |  |  PRE11 = F: F
+|  |  |  |  |  |  |  AGE = 'B4of4': F
+|  |  |  |  |  |  PRE6 = PRZ0: T
+|  |  |  |  |  PRE10 = F: F
+|  |  |  |  PRE4 = 'B3of4'
+|  |  |  |  |  PRE17 = T: T
+|  |  |  |  |  PRE17 = F
+|  |  |  |  |  |  PRE9 = T
+|  |  |  |  |  |  |  PRE8 = T: T
+|  |  |  |  |  |  |  PRE8 = F: F
+|  |  |  |  |  |  PRE9 = F
+|  |  |  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  |  |  AGE = 'B2of4': F
+|  |  |  |  |  |  |  AGE = 'B3of4': F
+|  |  |  |  |  |  |  AGE = 'B4of4'
+|  |  |  |  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  |  |  |  PRE6 = PRZ1
+|  |  |  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  |  |  PRE8 = F
+|  |  |  |  |  |  |  |  |  |  PRE25 = T: F
+|  |  |  |  |  |  |  |  |  |  PRE25 = F: T
+|  |  |  |  |  |  |  |  PRE6 = PRZ0: F
+|  |  |  |  PRE4 = 'B4of4': F
+|  |  |  PRE30 = F: F
+|  PRE14 = OC13
+|  |  PRE6 = PRZ2
+|  |  |  PRE4 = 'B1of4': null
+|  |  |  PRE4 = 'B2of4': F
+|  |  |  PRE4 = 'B3of4': T
+|  |  |  PRE4 = 'B4of4': null
+|  |  PRE6 = PRZ1
+|  |  |  PRE4 = 'B1of4'
+|  |  |  |  PRE8 = T: T
+|  |  |  |  PRE8 = F
+|  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  AGE = 'B2of4': T
+|  |  |  |  |  AGE = 'B3of4': F
+|  |  |  |  |  AGE = 'B4of4': null
+|  |  |  PRE4 = 'B2of4': F
+|  |  |  PRE4 = 'B3of4': F
+|  |  |  PRE4 = 'B4of4': null
+|  |  PRE6 = PRZ0: T
+DGN = DGN2
+|  PRE4 = 'B1of4'
+|  |  PRE14 = OC11: F
+|  |  PRE14 = OC14: null
+|  |  PRE14 = OC12
+|  |  |  PRE8 = T: F
+|  |  |  PRE8 = F
+|  |  |  |  AGE = 'B1of4': null
+|  |  |  |  AGE = 'B2of4': null
+|  |  |  |  AGE = 'B3of4': T
+|  |  |  |  AGE = 'B4of4': F
+|  |  PRE14 = OC13: T
+|  PRE4 = 'B2of4'
+|  |  PRE10 = T
+|  |  |  PRE6 = PRZ2: F
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE17 = T: T
+|  |  |  |  PRE17 = F
+|  |  |  |  |  PRE14 = OC11
+|  |  |  |  |  |  PRE25 = T: T
+|  |  |  |  |  |  PRE25 = F: F
+|  |  |  |  |  PRE14 = OC14: F
+|  |  |  |  |  PRE14 = OC12
+|  |  |  |  |  |  PRE11 = T: T
+|  |  |  |  |  |  PRE11 = F
+|  |  |  |  |  |  |  PRE8 = T: F
+|  |  |  |  |  |  |  PRE8 = F: T
+|  |  |  |  |  PRE14 = OC13: F
+|  |  |  PRE6 = PRZ0: T
+|  |  PRE10 = F: F
+|  PRE4 = 'B3of4'
+|  |  PRE14 = OC11: T
+|  |  PRE14 = OC14: T
+|  |  PRE14 = OC12
+|  |  |  PRE6 = PRZ2: null
+|  |  |  PRE6 = PRZ1
+|  |  |  |  PRE9 = T: F
+|  |  |  |  PRE9 = F
+|  |  |  |  |  PRE11 = T: F
+|  |  |  |  |  PRE11 = F: T
+|  |  |  PRE6 = PRZ0: F
+|  |  PRE14 = OC13: F
+|  PRE4 = 'B4of4': F
+DGN = DGN4
+|  PRE4 = 'B1of4'
+|  |  PRE30 = T
+|  |  |  PRE6 = PRZ2: T
+|  |  |  PRE6 = PRZ1
+|  |  |  |  AGE = 'B1of4': null
+|  |  |  |  AGE = 'B2of4': null
+|  |  |  |  AGE = 'B3of4': T
+|  |  |  |  AGE = 'B4of4': F
+|  |  |  PRE6 = PRZ0: T
+|  |  PRE30 = F: F
+|  PRE4 = 'B2of4'
+|  |  PRE9 = T: T
+|  |  PRE9 = F
+|  |  |  PRE17 = T
+|  |  |  |  PRE8 = T: T
+|  |  |  |  PRE8 = F
+|  |  |  |  |  PRE11 = T
+|  |  |  |  |  |  PRE6 = PRZ2: F
+|  |  |  |  |  |  PRE6 = PRZ1: T
+|  |  |  |  |  |  PRE6 = PRZ0: null
+|  |  |  |  |  PRE11 = F: F
+|  |  |  PRE17 = F
+|  |  |  |  PRE10 = T
+|  |  |  |  |  AGE = 'B1of4': null
+|  |  |  |  |  AGE = 'B2of4': null
+|  |  |  |  |  AGE = 'B3of4'
+|  |  |  |  |  |  PRE14 = OC11: F
+|  |  |  |  |  |  PRE14 = OC14: null
+|  |  |  |  |  |  PRE14 = OC12
+|  |  |  |  |  |  |  PRE7 = T: F
+|  |  |  |  |  |  |  PRE7 = F: F
+|  |  |  |  |  |  PRE14 = OC13: F
+|  |  |  |  |  AGE = 'B4of4': F
+|  |  |  |  PRE10 = F: F
+|  PRE4 = 'B3of4': F
+|  PRE4 = 'B4of4': F
+DGN = DGN6: F
+DGN = DGN5
+|  PRE7 = T: F
+|  PRE7 = F
+|  |  PRE11 = T
+|  |  |  PRE10 = T: F
+|  |  |  PRE10 = F
+|  |  |  |  PRE4 = 'B1of4': null
+|  |  |  |  PRE4 = 'B2of4': T
+|  |  |  |  PRE4 = 'B3of4': F
+|  |  |  |  PRE4 = 'B4of4': null
+|  |  PRE11 = F
+|  |  |  PRE4 = 'B1of4': T
+|  |  |  PRE4 = 'B2of4'
+|  |  |  |  PRE14 = OC11
+|  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  PRE6 = PRZ1: T
+|  |  |  |  |  PRE6 = PRZ0: F
+|  |  |  |  PRE14 = OC14: null
+|  |  |  |  PRE14 = OC12
+|  |  |  |  |  PRE6 = PRZ2: null
+|  |  |  |  |  PRE6 = PRZ1: F
+|  |  |  |  |  PRE6 = PRZ0: T
+|  |  |  |  PRE14 = OC13: T
+|  |  |  PRE4 = 'B3of4': T
+|  |  |  PRE4 = 'B4of4': null
+DGN = DGN8
+|  PRE4 = 'B1of4': null
+|  PRE4 = 'B2of4': null
+|  PRE4 = 'B3of4': T
+|  PRE4 = 'B4of4': F
+DGN = DGN1: F
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         116               72.5    %
+Incorrectly Classified Instances        39               24.375  %
+Kappa statistic                          0.0553
+Mean absolute error                      0.2595
+Root mean squared error                  0.4892
+Relative absolute error                101.6091 %
+Root relative squared error            132.7557 %
+UnClassified Instances                   5                3.125  %
+Total Number of Instances              160
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.192    0.140    0.217      0.192    0.204      0.055    0.562     0.191     T
+                 0.860    0.808    0.841      0.860    0.851      0.055    0.540     0.851     F
+Weighted Avg.    0.748    0.696    0.736      0.748    0.742      0.055    0.543     0.740
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+   5  21 |   a = T
+  18 111 |   b = F
